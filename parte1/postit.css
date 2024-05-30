@@ -10,9 +10,9 @@ body {
 }
 h2 {
   font-size: 2rem;
+  font-weight: 600;
 }
 .lavagna {
-  /* border */
   display: flex;
   flex-wrap: wrap;
   margin: 2rem;
@@ -36,7 +36,8 @@ h2 {
     rgba(249, 250, 200, 1) 72%,
     rgba(83, 83, 83, 0.6821345707656612) 100%
   );
-  transform: rotate(-5deg);
+  rotate: -5deg;
+  transition: rotate 0.8s;
 }
 .color2 {
   background: rgb(197, 245, 200);
@@ -45,7 +46,8 @@ h2 {
     rgba(197, 245, 200, 1) 72%,
     rgba(83, 83, 83, 0.6821345707656612) 100%
   );
-  transform: rotate(5deg);
+  rotate: 5deg;
+  transition: rotate 0.8s;
 }
 .color3 {
   background: rgb(199, 199, 245);
@@ -54,12 +56,13 @@ h2 {
     rgba(199, 199, 245, 1) 72%,
     rgba(83, 83, 83, 0.6821345707656612) 100%
   );
-  transform: rotate(-7deg);
+  rotate: 7deg;
+  transition: rotate 0.8s;
 }
 
 .postIt:hover {
-  transition: transform 0.7s;
-  transform: scale(1, 1.1);
+    rotate: 0deg;
+    scale: 1.2
 }
 
 
@@ -74,13 +77,13 @@ h2 {
   }
 
   .color1 {
-    animation: postItAnimation 1s forwards;
+    animation: postItAnimation 0.8s forwards;
   }
   
   .color2 {
-    animation: postItAnimation 1s forwards 1s;
+    animation: postItAnimation 0.8s forwards 0.8s;
   }
   
   .color3 {
-    animation: postItAnimation 1s forwards 2s;
+    animation: postItAnimation 0.8s forwards 1.6s;
   }

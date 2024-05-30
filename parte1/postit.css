@@ -1,0 +1,52 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #666666;
+}
+h2{
+    font-size: 2rem;
+}
+.lavagna {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 30px;
+}
+.postIt {
+width: 22%;
+height: 150px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+row-gap: 10px;
+
+}
+
+.color1 {
+    /* background-color: #F9FAC8; */
+    background: rgb(249,250,200);
+    background: linear-gradient(180deg, rgba(249,250,200,1) 72%, rgba(83,83,83,0.6821345707656612) 100%);
+    transform: rotate(-5deg);
+}
+.color2 {
+    /* background-color: #C5F5C8; */
+    background: rgb(197,245,200);
+background: linear-gradient(180deg, rgba(197,245,200,1) 72%, rgba(83,83,83,0.6821345707656612) 100%);
+transform: rotate(5deg);
+}
+.color3 {
+    /* background-color: #C7C7F5; */
+    background: rgb(199,199,245);
+background: linear-gradient(180deg, rgba(199,199,245,1) 72%, rgba(83,83,83,0.6821345707656612) 100%);
+transform: rotate(-7deg);
+}
+
+.postIt:hover {
+    transition: transform 0.7s;
+    transform: scale(1,1.1);
+    
+    
+}

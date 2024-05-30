@@ -4,11 +4,13 @@
 
 body {
     background-color: #666666;
+    font-family: "Indie Flower";
 }
 h2{
     font-size: 2rem;
 }
 .lavagna {
+    /* border */
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
@@ -47,6 +49,5 @@ transform: rotate(-7deg);
 .postIt:hover {
     transition: transform 0.7s;
     transform: scale(1,1.1);
-    
-    
 }
+
